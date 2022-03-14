@@ -1,0 +1,66 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables.scss";
+
+@import "../vendors/customize.scss";
+
+/*------------------------------------*\
+  #Contact-us-style
+\*------------------------------------*/
+
+.contact-us {
+    height: 603px;
+    @include responsive(mobile) {
+        height: 450px;
+        padding: 90px 20px 82px 20px;
+    }
+    @include responsive(tablet) {
+        padding: 150px 190px 150px 190px;
+    }
+    @include responsive(desktop) {
+        padding: 150px 400px 150px 400px;
+    }
+ }
+  
+.contact__image {
+  margin-left: 55px;
+  }
+  
+.contact-us-icon {
+  height: 120px;
+  width: 120px;
+  @include responsive(mobile) {
+      height: 90px;
+      width: 90px;
+    }
+  }
+  
+.contact-circle-icon {
+  width: 61px;
+  height: 61px;
+  background-color: $red;
+  position: relative;
+  left: -70px;
+  border-radius: 100%;
+  opacity: 0.9;
+  @include responsive(mobile) {
+      width: 45px;
+      height: 45px;
+      position: relative;
+      left: -50px;
+    }
+  }
+  
+.contact-content__title {
+  @include font-procedure-header;
+  @include responsive(mobile) {
+      @include font-list-event-title;
+    }
+  }
+  
+.contact-content__description {
+  @include font-icon-event-content;
+  @include responsive(mobile) {
+      @include font-navbar-item;
+      font-weight: 500;
+    }
+  }

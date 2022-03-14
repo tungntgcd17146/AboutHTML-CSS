@@ -1,0 +1,111 @@
+/* Apply layout Grids and flexbox */
+body {
+    /* Background images for all page */
+    background-image: url("https://i.pinimg.com/originals/08/0d/fa/080dfa0ba144236bd20f235089d8dc59.jpg");
+    background-attachment: fixed;
+    color: antiquewhite;
+  }
+.header{
+    z-index: 10; /* Overlapping Elements */
+    position: fixed; /* Fixed positioning */
+    width: 100%;
+    opacity: 0.8;
+    background-color: rgb(233, 231, 231);
+}
+.header_container{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    padding-left: 20px;
+}
+.header_nav{
+    display: flex;
+    padding-top: 35px;
+    font-weight: bold;
+}
+.logo{
+    border-radius: 100%;
+    width: 90px;
+    height: 100px;
+}
+.wrapper_mainstory--intro {
+    padding: 20px;
+}
+.wrapper_mainstory--intro h1 {
+    position: relative; /* Absolute positioning */
+    right: 200px;
+    color:blueviolet;
+}
+.wrapper{ 
+    position: relative; /* Relative positioning */
+    top: 150px;
+    margin: 10px 200px 10px 200px;
+}
+.wrapper_mainstory{
+    display: flex;
+    flex-direction: row;
+}
+.wrapper_mainstory--storyimage{
+    max-width: 700px;
+}
+/* Create multi-column layouts with floats */
+.floatColumn_rowContent{
+    float: left;
+    width: 800px;
+}
+.floatColumn_rowContent2{
+    float: left;
+    width: 300px;
+}
+.imgctent1{
+    float: right; /* Floating Elements */
+    margin: 10px;
+}
+.imgctent2{
+    float: left; /* Aligning images using css */
+    margin: 10px;
+}
+.imageContent{
+    margin-top: 100px;
+    position: relative;
+    top: 150px;
+    float: left;
+    margin: 10px 200px 10px 200px;
+}
+
+.titleArticles{
+    text-align: center;
+    padding-top: 50px;
+    color: aliceblue;
+    background-repeat: no-repeat; /* Repeating images */
+    background-image: url('/src/images/backgroundimg.jpg');/* Background images */
+    background-size: cover;
+    height: 100px;
+}
+.imagesexam{
+    display: flex;
+    justify-content: center;
+}
+.img{
+    width: 300px; /* Controlling size of images in css */
+    height: 200px;
+}
+.grid_3{
+    text-align: center;
+}
+.footer{
+    position: relative;
+    top: 200px;
+    float: left;
+    text-align: center;
+    padding-top: 30px;
+    opacity: 0.5;
+    background-color: rgb(233, 231, 231);
+    height: 100px;
+    width: 100%;
+    color: black;
+}

@@ -1,0 +1,49 @@
+@import "../abstracts/variables.scss";
+@import "../vendors/customize";
+@import "../abstracts/mixins";
+
+
+.btn {
+    color: white !important;
+}
+
+.btn-input {
+    border-radius: 8;
+    font-size: 16px;
+    height: 61px;
+    @include responsive(mobile) {
+        width: 90px;
+        height: 50px;
+        font-size: 14px !important;
+    }
+    @include responsive(tablet) {
+        width: 114px;
+    }
+    @include responsive(desktop) {
+        width: 136px;
+    }
+}
+
+.btn-m {
+    font-size: 14px !important;
+    height: 40px;
+    width: 91px;
+    margin: 0px !important;
+}
+
+.btn-s {
+    width: 160px;
+    height: 48px;
+    font-size: 14px !important;
+}
+
+.btn-x {
+    width: 204px;
+    height: 70px;
+    font-size: 24px !important;
+    @include responsive(iphone) {
+        height: 42px !important;
+        width: 124px !important;
+        font-size: 16px !important;
+    }
+}

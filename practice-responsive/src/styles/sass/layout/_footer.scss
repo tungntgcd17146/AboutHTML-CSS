@@ -1,0 +1,73 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables.scss";
+
+@import "../vendors/customize.scss";
+  
+/*------------------------------------*\
+  #Footer-style
+\*------------------------------------*/
+
+.footer-section {
+    background-color: $red;
+}
+
+.footer {
+    height: 536px;
+    padding: 80px 100px 80px 100px;
+    color: $white;
+    @include responsive(mobile) {
+        height: 1340px;
+        padding: 80px 20px 80px 20px;
+    }
+    @include responsive(tablet) {
+        padding: 80px 60px 80px 60px;
+    }
+}
+  
+.footer-content__header,
+.footer-content__item,
+.footer-social__content {
+  margin-bottom: 25px;
+  margin-top: 0px;
+  @include font-procedure-content-detail;
+  font-size: 16px;
+  @include responsive(mobile) {
+      margin-bottom: 22px;
+    }
+  }
+
+.footer-content__header {
+    @include responsive(mobile) {
+        margin-top: 25px;
+      }
+}
+
+.footer-social__content {
+    @include responsive(tablet) {
+        margin-bottom: 0px;
+      }
+}
+  
+.footer-content__item,
+.footer-social__content {
+  font-weight: 400;
+  @include link-item;
+  }
+  
+.footer-social {
+  @include responsive(mobile) {
+      height: 100px;
+    }
+  }
+
+.social-icon {
+  @include link-item;
+  height: 32px;
+  width: 32px;
+  margin-left: 16px;
+  @include responsive(iphone) {
+      margin-left: 0px;
+      margin-right: 16px;
+    }
+  }
+  

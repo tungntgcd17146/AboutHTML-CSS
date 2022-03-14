@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists Table and Forms Example</title>
+    <!-- Using external css -->
+    <link href="/src/styles/styleChapter14.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <h1>My Infomation</h1>
+    <!-- Nested lists -->
+    <ul>
+        <li>Fullname:</li>
+        <ul class="imgicon">
+            <li>Nguyen Thanh Tung</li>
+        </ul>
+        <li>Age: 22</li>
+        <li>Address:</li>
+        <ul class="imgicon">
+            <li>DaNang, VietNam</li>
+        </ul>
+    </ul>
+    <hr/>
+    <!-- Chapter 6: Tables -->
+    <!-- Basic Table Structure, table headings, spanning row and colum -->
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th scope="col">Year</th>
+                <th scope="col">Activity</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <th scope="row">LQD hight school</th>
+                    <td>2014-2017</td>
+                    <td>pass</td>
+                </tr>
+                <tr>
+                    <th scope="row">Greenwich university</th>
+                    <td>2017-2021</td>
+                    <td>pass</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td colspan="2">Nguyen Thanh Tung</td>
+                </tr>
+            </tfoot>
+        </thead>
+    </table>
+    <!-- End Chapter 6-->
+    <hr/>
+    <!-- Chapter 7: Forms -->
+    <!-- Below have form validation example -->
+    <form action="#" method="post">
+        <!-- Grouping form elements example -->
+        <fieldset>
+            <legend>
+                Your Review:
+            </legend>
+            <label>
+                <!-- Email input example -->
+                Email:
+                <input type="email" name="email" size="30" maxlength="100" required>
+            </label>
+            <!-- Drop down list box example -->
+            <p>
+                <label for="hear-about">
+                How did you hear about us?
+                </label>
+                <select name="referrer" id="hear-about">
+                    <option value="google">Google</option>
+                    <option value="friend">Friend</option>
+                    <option value="advert">Advert</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+            <!-- File input box example -->
+            <p>Upload your favorite image:</p>
+            <input type="file" name="user-image"/>
+            <p>
+            Would you visit again?
+            <br />
+                    <!-- Radio button example -->
+                    <label>
+                        <input type="radio" name="rating" value="yes" />
+                        Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="no" />
+                        No
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="maybe" />
+                        Maybe
+                    </label>
+            </p>
+            <p>
+                <label for="comments">
+                Comments:
+                </label>
+            <br />
+            <!-- Text area example -->
+                <textarea rows="4" cols="40" id="comments">
+                </textarea>
+            </p>
+            <!-- Checkbox button example -->
+            <label>
+                <input type="checkbox" name="subscribe" checked="checked" />
+                Sign me up for email updates
+            </label>
+            <br />
+            <!-- Submit button example -->
+            <input type="submit" value="Submit review" />
+        </fieldset>
+    </form>
+    <!-- End Chapter 7  -->
+</body>
+</html>

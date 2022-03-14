@@ -1,0 +1,476 @@
+/**
+ * CONTENTS
+ *
+ * Initial style
+ * Initial design for small detail in the overall page interface
+ * (Buttons, font style and size, colors, icons)
+ *
+ * Same-layout-for-some-section
+ * 
+ * SECTION-HEADER
+ *
+ * SECTION1-Our Chef
+ *
+ * SECTION2, SECTION3 
+ * Best Burger and Big Burger
+ *
+ * SECTION4 Statistics
+ *
+ * SECTION5-Update and email input
+ * 
+ * SECTION-FOOTER
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #Initial-style
+\*------------------------------------*/
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  width: 100rem;
+  margin: auto;
+}
+
+
+.text--orange {
+  color: rgb(231, 69, 63);
+}
+
+.text--white {
+  color: rgb(252, 252, 252);
+}
+
+
+.heading--large {
+  font-size: 110px;
+  font-weight: bolder;
+}
+
+.heading--xlarge {
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.text--upper{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.text--simple {
+  font-size: 30px;
+}
+
+
+.button {
+  width: 240px;
+  height: 35px;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.button:hover {
+  background-color: rgb(85, 85, 85);
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: rgb(27, 27, 27);
+  cursor: pointer;
+}
+
+.button--orange {
+  background-color: rgb(231, 69, 63);
+  color: rgb(252, 252, 252);
+}
+
+.button--white {
+  background-color: rgb(252, 252, 252);
+  color: rgb(231, 69, 63);
+}
+
+
+.circle-icon {
+  /* padding-top: 25px;
+  text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 7px solid rgb(252, 252, 252);
+  color: rgb(252, 252, 252);
+}
+
+
+
+
+
+/*------------------------------------*\
+  #Same-layout-for-some-section
+\*------------------------------------*/
+
+.header,
+.section1, .section2, .section3, .section4, .section5, 
+.footer {
+  background-repeat: no-repeat;
+  padding: 0px 100px 0px 100px;
+  height: 900px;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #SECTION-HEADER
+\*------------------------------------*/
+
+.header {
+  background-image: url(../images/Banner.png);
+  background-size: cover;
+  padding: 0px 130px 0px 130px;
+}
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+
+    .navbar__logo {
+      height: 100px;
+      width: 120px;
+    }
+
+    .navbar__item {
+      display: flex;
+    }
+
+      .navbar__item-title {
+        list-style-type: none;
+        margin-left: 50px;
+      }
+
+      .navbar__item-title:hover {
+        color: rgb(231, 69, 63);
+        border-bottom: 2px solid rgb(231, 69, 63);
+        cursor: pointer;
+      }
+
+      .navbar__item-title:active {
+        color: rgb(255, 8, 0);
+        border-bottom: 2px solid rgb(255, 8, 0);
+        cursor: pointer;
+      }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin-top: 100px;
+  }
+
+    .content__text {
+      width: 65%;
+    }
+
+    .content__heading,
+    .content__text,
+    .content__button {
+      margin: 0px 0px 50px 0px;
+    }
+
+
+
+
+
+/*------------------------------------*\
+  #SECTION1- Our-Chef
+\*------------------------------------*/
+
+.section1 {
+  background-color: rgb(247, 214, 183);
+}
+
+  .our-chef {
+    background-image: url(../images/Section-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 100px;
+    height: 900px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+    .our-chef__header { margin: 100px 0px 50px 0px; }
+
+    .our-chef__content {
+      margin: 0px 0px 80px 0px;
+      width: 45%;
+    }
+
+    .chef-info {
+      width: 90%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+      .person-info__image {
+        width: 300px;
+        height: 300px;
+      }
+
+
+
+
+
+/*------------------------------------*\
+  #SECTION2, #SECTION3 - Best-Burger-and-Big-Burger
+\*------------------------------------*/
+
+.section2, .section3 {
+  text-align: center;
+}
+
+.section2 {
+  background-color: rgb(231, 69, 63);
+  background-size: contain;
+}
+
+.section3 {
+  background-color: rgb(247, 214, 183);
+}
+.burger1, .burger2 {
+  height: 900px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.burger2 {
+  background-image: url(../images/Section-2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+  .burger1-img, .burger2-img {
+    width: 600px;
+    height: 600px;
+  }
+
+  .burger1-content, .burger2-content {
+    width: 37%;
+  }
+
+    .burger1-content__header,
+    .burger1-content__text,
+    .burger2-content__header,
+    .burger2-content__text {
+      text-align: left;
+      margin: 0px 0px 80px 0px;
+    }
+
+
+
+
+
+/*------------------------------------*\
+  #SECTION4-Statistics
+\*------------------------------------*/
+
+.section4 {
+  background-color: rgb(231, 69, 63);
+  background-size: contain;
+}
+
+  .statistics-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+    .statistics-content__header {
+      margin-top: 100px;
+      margin-bottom: 50px;
+    }
+
+    .statistics-content__text {
+      margin: 0px 0px 50px 0px;
+      width: 45%;
+    }
+
+    .statistics-content__circle {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+      .circle-icon {
+        width: 380px;
+        height: 350px;
+      }
+
+        .circle-icon__heading { margin: 0px; }
+
+        .circle-icon_content { margin: 0px; }
+
+
+
+
+
+/*------------------------------------*\
+  #SECTION5-Update-and-email-input
+\*------------------------------------*/
+
+.section5 {
+  background-color: rgb(247, 214, 183);
+  background-size: contain;
+}
+
+  .update-section {
+    background-repeat: no-repeat;
+    background-image: url(../images/Section-3.png);
+    height: 900px;
+    background-size: contain;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+    .update-section__header { margin: 250px 0px 50px 0px; }
+
+    .update-section__text {
+      margin: 0px 0px 100px 0px;
+      width: 45%;
+    }
+
+    .input-section {
+      display: flex;
+      height: 70px;
+      width: 700px;
+      border-radius: 35px;
+      background-color: rgb(252, 252, 252);
+    }
+
+      .input-section__button {
+        background-color: rgb(231, 69, 63);
+        border-radius: 30px;
+        width: 300px;
+        text-align: center;
+        padding-top: 18px;
+        color: rgb(252, 252, 252);
+        border-bottom-left-radius: 0%;
+        border-top-left-radius: 0%;
+      }
+
+      .input-section__button:hover {
+        background-color: rgb(85, 85, 85);
+        cursor: pointer;
+      }
+
+      .input-section__button:active {
+        background-color: rgb(27, 27, 27);
+        cursor: pointer;
+      }
+      
+      .input-section__form {
+        width: 400px;
+        margin: 10px 30px 10px 30px;
+        border: none;
+      }
+
+
+
+
+
+/*------------------------------------*\
+  #SECTION-FOOTER
+\*------------------------------------*/
+
+.footer {
+  background-color: rgb(54, 54, 54);
+}
+
+.info-footer {
+  background-size: contain;
+  display: flex;
+  justify-content: space-around;
+}
+
+  .title {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+  }
+
+    .title__social {
+      display: flex;
+      margin-top: 30px;
+    }
+
+      .social-icon {
+        background-color: rgb(252, 252, 252);
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        text-align: center;
+        margin-right: 20px;
+      }
+
+      .social-icon:hover {
+        background-color: rgb(231, 69, 63);
+        cursor: pointer;
+      }
+
+        .social-icon__item {
+          color: rgb(85, 85, 85);
+          margin-top: 12px;
+          font-size: 30px;
+        }
+
+  .information {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 200px;
+  }
+    .information__about, .information__services, .information__other {
+      display: flex;
+      flex-direction: column;
+    }
+
+      .title__header,
+      .about-header,
+      .services-header,
+      .other-header {
+        font-weight: bold;
+        font-size: 45px;
+      }
+
+      .information-title {
+        text-decoration: none;
+        margin-bottom: 15px;
+        color: rgb(252, 252, 252);
+      }
+
+      .information-title:hover { color: rgb(231, 69, 63); }
+
+      .information-title:active { color: rgb(255, 8, 0); }
+
+      

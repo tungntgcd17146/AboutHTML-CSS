@@ -1,0 +1,29 @@
+// import bootstrap customize style
+@import "./vendors/customize.scss";
+
+// import typography template
+@import "./base/typography";
+
+// variables
+@import "./abstracts/variables.scss";
+
+// import components
+@import "./components/button";
+@import "./components/logo-brand";
+@import "./components/link-item";
+
+// layout
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/list-event";
+@import "./layout/procedure";
+@import "./layout/brand";
+@import "./layout/contact-us";
+@import "./layout/advertisement";
+
+
+
+body {
+  font-family: "manrope";
+}
+

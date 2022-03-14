@@ -1,0 +1,132 @@
+/* Font */
+body{
+    font-family: "Times New Roman", Times, serif;
+    background-color: rgb(151, 238, 241);
+}
+p{
+    margin: 10px;
+}
+
+/* Make Color */
+.background{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    padding-top:50px ;
+}
+.background--color1{
+    background-color: rgb(252, 252, 252);
+}
+.background--color2{
+    background-color: rgb(247, 231, 216);
+}
+.background--color3{
+    background-color: rgb(231, 69, 63);
+}
+.background--color4{
+    background-color: rgb(85, 85, 85);
+}
+
+/* Chose right font size, color  */
+.text-orange{
+    color: rgb(231, 69, 63);
+}
+.text-white{
+    color: rgb(252, 252, 252);
+}
+.heading1{
+    font-size: 70px;
+    font-weight: bolder;
+}
+.heading2{
+    font-size: 50px;
+    font-weight: 600;
+}
+.upper-text{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 550;
+}
+.simple-text{
+    font-size: 20px;
+}
+
+/* Edit Button */
+.button{
+    width: 200px;
+    height: 20px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    border-radius: 20px;
+}
+.button:hover{
+    background-color: rgb(85, 85, 85);
+    cursor: pointer;
+}
+.button-orange{
+    background-color: rgb(231, 69, 63);
+    color: rgb(252, 252, 252);
+}
+.button-white{
+    background-color: rgb(252, 252, 252);
+    color: rgb(231, 69, 63);
+}
+
+/* Edit circleIcon */
+.circle-icon{
+    padding-top: 25px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 5px solid rgb(252, 252, 252);
+    color: rgb(252, 252, 252);
+}
+
+/* Edit Form input */
+.input{
+    display: flex;
+    height: 50px;
+    width: 600px;
+    border-radius: 20px;
+    background-color: rgb(252, 252, 252);
+}
+.input__button{
+    background-color: rgb(231, 69, 63);
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+    padding-top: 15px;
+    color: rgb(252, 252, 252);
+    border-bottom-left-radius: 0%;
+    border-top-left-radius: 0%;
+}
+.input__button:hover{
+    background-color: rgb(85, 85, 85);
+    cursor: pointer;
+}
+.input__form{
+    width: 400px;
+    margin: 10px 30px 10px 30px;
+    border: none;
+} 
+
+/* Edit social icon */
+.social-icon{
+    background-color: rgb(252, 252, 252);
+    height: 55px;
+    width: 50px;
+    border-radius: 100%;
+    text-align: center;
+}
+.social-icon:hover{
+    background-color: rgb(231, 69, 63);
+    cursor: pointer;
+}
+.social-icon__item {
+    color: rgb(85, 85, 85);
+    margin-top: 10px;
+    font-size: 30px;
+}

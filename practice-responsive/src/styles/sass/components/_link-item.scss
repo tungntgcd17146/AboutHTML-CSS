@@ -1,0 +1,15 @@
+@import "../abstracts/variables.scss";
+
+// link-item-content
+@mixin link-item {
+    cursor: pointer;
+    &:hover{
+        text-decoration: underline;
+        color: $black;
+    }
+    &:active{
+        transform: translateY(-1px);
+        text-decoration: underline;
+        color: $black;
+    }
+}

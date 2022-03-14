@@ -1,0 +1,19 @@
+@import "../vendors/customize.scss";
+
+// media queries
+@mixin responsive($var) {
+    @if $var == mobile {
+      @media only screen and (min-width: 0) and (max-width: 1023px) {
+        @content;
+      }
+    } @else if $var == tablet {
+      @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+        @content;
+      }
+    } @else if $var == desktop {
+      @media only screen and (min-width: 1440px) {
+        @content;
+      }
+    }
+  }
+  

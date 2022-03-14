@@ -1,0 +1,86 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables.scss";
+
+@import "../vendors/customize.scss";
+
+/*------------------------------------*\
+  #brand-style
+\*------------------------------------*/
+
+.brand-content {
+  background-color: $gray;
+}
+  
+.brand-section {
+    height: 603px;
+    @include responsive(mobile) {
+        padding: 40px 21px 40px 21px;
+        height: 904px;
+    }
+    @include responsive(tablet) {
+        padding: 45px 38px 73px 38px;
+    }
+    @include responsive(desktop) {
+        padding: 59px 165px 59px 165px;
+    }
+}
+  
+.brand__title {
+  @include font-procedure-header;
+  @include responsive(mobile) {
+      @include font-list-event-title;
+    }
+}
+  
+.brand__description {
+  @include font-procedure-content-detail;
+  font-weight: 500;
+  @include responsive(mobile) {
+      @include font-icon-event-content;
+      font-size: 14px !important;
+    }
+  }
+  
+.logo-col {
+  padding: 0px;
+  @include responsive(iphone) {
+      align-items: center;
+      padding: 0px;
+    }
+  }
+  
+.logo-bg {
+  @include brand-logo-bg;
+  margin-bottom: 25px;
+  }
+  
+.logo-bg1 { padding: 15px 18px 15px 18px; }
+  
+.logo-bg2 { padding: 18px 24px 18px 24px; }
+  
+.logo-bg3 { padding: 30px 24px 30px 24px; }
+  
+.logo-bg4,
+.logo-bg5 { padding: 15px 19px 15px 19px; }
+  
+.logo-bg6 { padding: 22px 2px 22px 2px; } 
+.logo-bg7 { 
+    padding: 18px 26px 18px 26px; 
+    @include responsive(mobile) {
+      display: none;
+    }
+  }
+  
+.logo-bg8 { 
+    padding: 31px 36px 31px 36px; 
+    @include responsive(mobile) {
+      display: none;
+    }
+  }
+  
+.logo-bg9 { 
+    padding: 32px 33px 32px 34px; 
+    @include responsive(mobile) {
+      display: none;
+    }
+  }

@@ -1,0 +1,185 @@
+@import "../abstracts/variables.scss";
+
+/*------------------------------------*\
+  #Font-header-style
+\*------------------------------------*/
+
+@mixin font-header-title {
+    font-size: 64px;
+    line-height: 82px;
+    font-weight: 800;
+    font-family: "manrope";
+}
+@mixin font-header-content {
+    font-size: 20px;
+    line-height: 36px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin font-navbar-item {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: $black; 
+}
+
+/*------------------------------------*\
+  #Font-ListEvents-style
+\*------------------------------------*/
+
+@mixin font-list-event-title {
+    font-size: 36px;
+    line-height: 49px;
+    font-weight: 800;
+    text-align: center;
+    font-style: normal;
+}
+
+@mixin font-list-event-content {
+    font-size: 24px;
+    line-height: 39px;
+    font-weight: 400;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: 0.2px;
+}
+
+@mixin font-icon-event-title {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 800;
+    text-align: center;
+    font-style: normal;
+}
+
+@mixin font-icon-event-content {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: 0.2px;
+}
+
+/*------------------------------------*\
+  #Font-procedure-style
+\*------------------------------------*/
+
+@mixin font-procedure-header {
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 800;
+    text-align: center;
+    font-style: normal;
+}
+
+@mixin font-procedure-content-detail {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*------------------------------------*\
+  #Font-Ipad-style-1024
+\*------------------------------------*/
+
+@mixin font-header-title--1024 {
+    font-size: 56px;
+    line-height: 73.5px;
+    font-weight: 800;
+    font-family: "manrope";
+}
+
+@mixin font-header-content--1024 {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/*------------------------------------*\
+  #Font-procedure-ipad-style
+\*------------------------------------*/
+
+@mixin font-procedure-content-detail--1024 {
+    font-size: 14px;
+    line-height: 21.5px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/*------------------------------------*\
+  #Font-width iphone-style
+\*------------------------------------*/
+
+@mixin font-header-title--375 {
+    font-size: 42px;
+    line-height: 57.5px;
+    font-weight: 800;
+    font-family: "manrope";
+    text-align: center;
+}
+
+@mixin font-header-content--375 {
+    font-size: 12px;
+    line-height: 23px;
+    letter-spacing: 0.2px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+/*------------------------------------*\
+  #Font-ListEvents-iphone-style
+\*------------------------------------*/
+
+@mixin font-list-event-title--375 {
+    font-size: 24px;
+    line-height: 25px;
+    font-weight: 800;
+    text-align: center;
+    font-style: normal;
+}
+
+@mixin font-list-event-content--375 {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: 0.2px;
+}
+
+/*------------------------------------*\
+  #Font-procedure-iphone-style
+\*------------------------------------*/
+
+@mixin font-procedure-header-375 {
+    font-size: 36px;
+    line-height: 47px;
+    font-weight: 800;
+    text-align: center;
+    font-style: normal;
+}
+
+@mixin font-procedure-desc-375 {
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 400;
+    text-align: center;
+    font-style: normal;
+}
+
+@mixin font-procedure-content-detail--375 {
+    font-size: 18px;
+    line-height: 24.5px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;;
+}

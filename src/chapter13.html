@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxes example</title>
+    <!-- Using internal css -->
+    <style type="text/css">
+        body {  
+            font-family: "Courier New", Courier, monospace;
+            background-color: #efefef;
+            text-align: center;/* Centering content */
+        }
+        img.logo{
+            width: 100px; /* Width, height */
+            height: 100px;
+        }
+        .page {
+            max-width: 940px; /* Limiting width */
+            min-width: 720px;
+            margin: 10px auto 10px auto; /* Margin (top,right,bottom,left) */
+            padding: 20px; /* Padding */
+            border:  5px dotted rgb(117, 116, 116); /* Border shorthand (width, style, color) */
+            background-color: #ffffff;
+            /* Using -moz-box-shadow, -webkit-box-shadow to support by chrome, firefox and safari*/
+            box-shadow: 5px 5px #f88989; /* Box shadows */
+            border-radius: 20px; /* Rounded corners */
+        }
+        .logo {
+            width: 150px;
+            margin: 10px auto 25px auto;
+        }
+        ul {
+            width: 550px;
+            padding: 15px;
+            margin: 0px auto 50px auto;
+            border-bottom: 1px solid #000;
+            text-align: center;
+        }
+        li {
+            display: inline;
+            margin: 0px 3px;
+        }
+        li.none{
+            display: none; /* Change inline/block */
+        }
+        li.visibility{
+            visibility: hidden; /* Hiding */
+        }
+        p {
+            max-height: 200px;/* Limiting height */
+            overflow: scroll;/* Overflowing content with scroll*/
+            text-align: center;
+            width: 600px;
+            margin: 20px auto 20px auto;
+            font-style: italic;
+        }
+        a {
+            color: #000000;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 6px 18px 5px 18px;
+        }
+        a:hover{
+            color: #cc3333;
+            background-color: #ffffff;
+        }
+        </style>
+</head>
+<body>
+    <div class="page">
+        <div class="logo">
+            <img class="logo" src="images/logo.jpg" alt="The Analog Specialists"/>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="none"><a href="#">For Sale</a></li>
+            <li class="visibility"><a href="#">Repairs</a></li>
+            <li class="none"><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p>
+            We specialise in the sales and repair of classic keyboards, in particular
+            the Fender Rhodes, Wurlitzer EP200, and Hohner Clavinet.We specialise in 
+            the sales and repair of classic keyboards, in particular
+            the Fender Rhodes, Wurlitzer EP200, and Hohner Clavinet.We specialise in 
+            the sales and repair of classic keyboards, in particular
+            the Fender Rhodes, Wurlitzer EP200, and Hohner Clavinet.We specialise in 
+            the sales and repair of classic keyboards, in particular
+            the Fender Rhodes, Wurlitzer EP200, and Hohner Clavinet.We specialise in 
+            the sales and repair of classic keyboards, in particular
+            the Fender Rhodes, Wurlitzer EP200, and Hohner Clavinet.We specialise in 
+            the sales and repair of classic keyboards, in particular
+            the Fender Rhodes, Wurlitzer EP200, and Hohner Clavinet.We specialise in 
+            the sales and repair of classic keyboards, in particular
+            the Fender Rhodes, Wurlitzer EP200, and Hohner Clavinet.
+        </p>
+    </div>
+</body>
+</html>

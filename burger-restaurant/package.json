@@ -1,0 +1,22 @@
+{
+  "name": "html-css-training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx parcel src/index.html",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.asoft-python.com:g-tungnguyen/html-css-training.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.0.0"
+  },
+  "dependencies": {
+    "html-inspector": "^0.8.2"
+  }
+}

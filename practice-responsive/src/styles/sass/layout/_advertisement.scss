@@ -1,0 +1,84 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables.scss";
+
+@import "../vendors/customize.scss";
+
+/*------------------------------------*\
+  #advertisement-style
+\*------------------------------------*/
+
+.advertisement {
+  @include responsive(mobile) {
+    padding: 90px 15px 80px 15px;
+  }
+  @include responsive(tablet) {
+      padding: 150px 60px 100px 10px;
+    }
+  @include responsive(desktop) {
+      padding: 160px 120px 100px 10px;
+    }
+  }
+  
+.advertisement__content {
+  @include responsive(mobile) {
+    height: 330px;
+    margin-top: 50px;
+  }
+  @include responsive(tablet) {
+    margin-top: 0px;
+  }
+}
+  
+.advertisement__img,
+.advertisement__content {
+  @include responsive(mobile) {
+    margin-bottom: 50px;
+  }
+  @include responsive(tablet) {
+    padding-left: 60px;
+    margin-bottom: 100px;
+  }
+  @include responsive(desktop) {
+    padding-left: 120px;
+    margin-bottom: 100px;
+  }
+}
+  
+.content__title {
+  @include responsive(mobile) {
+    @include font-procedure-header-375;
+    line-height: 40px;
+  }
+  @include responsive(tablet) {
+    @include font-header-title--1024;
+    font-weight: 700;
+  }
+  @include responsive(desktop) {
+    @include font-header-title;
+  }
+}
+  
+.content__description {
+  @include responsive(mobile) {
+    @include font-procedure-desc-375;
+    line-height: 25px;
+    margin-top: 10px
+  }
+  @include responsive(tablet) {
+    @include font-procedure-content-detail--1024;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  @include responsive(desktop) {
+    @include font-header-content--1024;
+    line-height: 32px;
+  }
+  }
+  
+.btn-s {
+  @include responsive(mobile) {
+      width: 100%;
+  }
+}
+
+

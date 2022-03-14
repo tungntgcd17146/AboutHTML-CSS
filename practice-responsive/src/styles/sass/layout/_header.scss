@@ -1,0 +1,136 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables.scss";
+
+@import "../vendors/customize.scss";
+
+  
+/*------------------------------------*\
+    #header-style
+\*------------------------------------*/
+
+.navbar-customize {
+  background-color: $gray;
+  opacity: 0.9;
+  @include responsive(mobile) {
+    padding: 35px 20px 10px 20px !important;
+  }
+  @include responsive(tablet) {
+    padding: 35px 40px 10px 40px !important;
+  }
+  @include responsive(desktop) {
+    padding: 35px 122px 10px 122px !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .header {
+    background-position-x: -490px;
+  }
+}
+
+.header {
+  background-image: url(../../images/headerbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 754px;
+  @include responsive(mobile) {
+    height: 601px;
+  }
+  @include responsive(tablet) {
+    height: 647px;
+  }
+  @include responsive(desktop) {
+    height: 754px;
+  }
+}
+
+.header-section {
+  @include responsive(mobile) {
+    padding: 137px 20px 84px 20px;
+  }
+  @include responsive(tablet) {
+    padding: 161px 40px 127px 80px;
+  }
+  @include responsive(desktop) {
+    padding: 200px 122px 148px 122px;
+  }
+}
+
+.item {
+  @include font-navbar-item;
+  margin-right: 30px;
+  color: $black !important;
+}
+
+.text-item {
+  width: 80%;
+  @include responsive(mobile) {
+    display: none;
+  }
+}
+  
+.content-header {
+  max-width: 665px;
+  @include responsive(tablet) {
+      max-width: 665px;
+    }
+  @include responsive(mobile) {
+      margin: 0px;
+      max-width: 335px;
+      }
+  }
+  
+.content-header__content {
+    max-width: 650px;
+    @include font-header-content;
+    @include responsive(tablet) {
+        max-width: 565px;
+        @include font-header-content--1024;
+      }
+    @include responsive(mobile) {
+        margin: 25px 0 40px 0;
+        max-width: 335px;
+        @include font-header-content--375;
+      }
+  }
+  
+.content-header__title {
+  @include font-header-title;
+  @include responsive(tablet) {
+      max-width: 665px;
+      @include font-header-title--1024;
+    }
+  @include responsive(mobile) {
+      max-width: 335px;
+      @include font-header-title--375;
+    }
+  }
+  
+.input {
+  margin-top: 50px;
+  background-color: $white;
+  padding: 6px;
+  max-width: 460px;
+  border-radius: 8px;
+  @include responsive(mobile) {
+    margin-top: 20px;
+    max-width: 335px;
+    height: 62px;
+  }
+  @include responsive(tablet) {
+      margin-top: 20px;
+      max-width: 422px;
+    }
+  }
+  
+.input__text {
+  margin-left: 10px;
+  border: none;
+  @include responsive(mobile) {
+    margin-left: 26.9px;
+    font-size: 14px;
+  }
+  @include responsive(tablet) {
+      margin-left: 26.9px;
+    }
+  }

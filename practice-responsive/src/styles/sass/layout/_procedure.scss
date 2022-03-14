@@ -1,0 +1,68 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables.scss";
+
+@import "../vendors/customize.scss";
+
+/*------------------------------------*\
+  #procedure-style
+\*------------------------------------*/
+
+.procedure-section {
+    background-color: $red;
+    color: $white;
+}
+
+.procedure {
+    margin: 0px;
+    @include responsive(mobile) {
+        padding: 50px 20px 80px 20px;
+        height: 836px;
+    }
+    @include responsive(tablet) {
+        padding: 30px 55px 35px 55px;
+        height: 276px;
+    }
+    @include responsive(desktop) {
+        height: 376px;
+        padding: 68px 175px 75px 175px;
+    }
+  }
+  
+.procedure__header {
+    @include font-procedure-header;
+    @include responsive(mobile) {
+        @include font-procedure-header-375;
+        }
+    }
+  
+.procedure__desc {
+  @include font-icon-event-content;
+  @include responsive(mobile) {
+      @include font-procedure-desc-375;
+    }
+  }
+  
+.procedure-content {
+  margin-top: 64px;
+  }
+  
+.procedure-content__detail {
+    padding: 0px;
+    @include font-procedure-content-detail;
+    @include responsive(mobile) {
+        max-width: 175px;
+        @include font-procedure-content-detail--375;
+        }
+    @include responsive(tablet) {
+        @include font-procedure-content-detail--1024;
+        }
+    }
+  
+.procedure-content__icon {
+    padding: 0px;
+    height: 32px !important;
+    width: 32px !important;;
+    @include responsive(mobile) {
+        transform: rotate(90deg);
+        }
+    }

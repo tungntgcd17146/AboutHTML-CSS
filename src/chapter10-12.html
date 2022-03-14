@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Using external css -->
+    <link href="/src/styles/style.css" type="text/css" rel="stylesheet"/>
+    <!-- Using internal css -->
+    <style type="text/css">
+    /*Exam Foreground color, background-color and understanding color */
+    /*Exam for chapter 12: Text*/
+
+    /* More font choice not installed on the computer*/
+    @font-face {
+        font-family: 'ChuckFiveRegular';
+        src: url('fronts/ChunkFive.eot');
+    }
+    body {
+        margin: 50px 200px 50px 200px;
+        text-align: center;
+    }
+    h2 {
+        font-family: Georgia, Times, serif;/* Specifying typefaces font-family */
+        color:aliceblue;/* color name */
+        background-color: rgb(218, 160, 160);/* background color */
+        letter-spacing: 0.2em;/* Letter */
+    }
+    p.intro{
+        font-size: 110%;/* size of type */
+        line-height: 1.4em;/* Leading with line-height */
+    }
+    p.intro::first-letter{  /* First letter example */
+        font-size: 200%;
+        color: black;
+    }
+    p::first-line{
+        font-weight: bold; /* First line example */
+    }
+    a{
+        text-decoration: none;/* Strike underline a element */
+    }
+    a:visited{
+        color: black; /* styling links */
+    }
+    a:hover{
+        color: blue; /* Responding to users */
+    }
+    h3 {
+        font-family: ChuckFiveRegular, Georgia, serif; /* More font choice */
+        color: #ee3e80;/* hex code */
+        background-color: hsl(30, 28%, 68%);/* hsl color(<HUE><SATURATION><LIGHTNESS>) */
+        text-shadow: 2px 2px 7px #2e2e2e;/* Drop shadow */
+    }
+    h4{
+        font-weight: normal;/* Bold font-weight */
+        text-transform: uppercase;/* uppercase with text-transform(or lowercase, capitalize) */
+    }
+    p {
+        color: rgb(218, 160, 160);/* rbg value */
+        background-color: hsla(175, 51%, 86%, 0.678);/* like hsl color, adds <ALPHA> */
+    }
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: rgba(231, 142, 142, 0.767); /*Like an RGB value,but adds a fourth value(alpha)*/
+        opacity: 0.3;/* opacity to specify the opacity of an element*/
+    }
+    p.credits{
+        font-style: italic;/* Italic with font-style */
+        text-decoration: underline;/* Underline text */
+        word-spacing: 1em;/* Word spacing */
+        text-align: left;/* Alignment */
+    }
+    </style>
+</head>
+<body>
+    <h2>Nguyen Thanh Tung</h2>
+    <h3>DaNang city, VietNam</h3>
+    <p class="intro">Our comprehensive guide to CSS grid, <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">
+        focusing</a> on all the settings both for the grid parent container and the grid child elements.</p>
+    <h4>Breed History</h4>
+    <p>CSS is not a pretty language. While it is simple to learn and get started with, it soon becomes 
+        problematic at any reasonable scale. There isn’t much we can do to change how CSS works, but we 
+        can make changes to the way we author and structure it.</p>
+    <p class="credits">By Tung Nguyen</p>
+    <div></div>
+</body>
+</html>

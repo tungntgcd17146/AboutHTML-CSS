@@ -1,0 +1,107 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables.scss";
+
+@import "../vendors/customize.scss";
+
+/*------------------------------------*\
+  #list-event-style
+\*------------------------------------*/
+
+
+.list-event {
+  padding: 120px 144px 120px 144px;
+  @include responsive(tablet) {
+      padding: 120px 86px 120px 86px;
+    }
+  @include responsive(mobile) {
+      padding: 80px 20px 80px 20px;
+    }
+  }
+  
+.list-event__title {
+  @include font-list-event-title;
+  max-width: 428px;
+  @include responsive(mobile) {
+      @include font-list-event-title--375;
+    }
+  }
+  
+.list-event__content {
+  @include font-list-event-content;
+  max-width: 994px;
+  margin-top: 30px;
+  @include responsive(mobile) {
+      @include font-list-event-content--375;
+      margin-top: 15px;
+    }
+  }
+  
+.content-detail {
+  max-width: 316px;
+  padding: 40px 50px 40px 50px !important; 
+  @include responsive(tablet) {
+      padding: 40px 70px 40px 70px !important; 
+    }
+  @include responsive(mobile) {
+      padding: 0px 20px 0px 20px !important;
+      max-width: 298px;
+    }
+  }
+  
+.icon {
+  width: 76px;
+  height: 76px;
+  margin-left: 40px;
+  }
+  
+.circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  opacity: 0.9;
+  }
+  
+.circle-1 {
+  background-color: $pink;
+  position: relative;
+  right: 40px;
+  }
+  
+.circle-2 {
+  background-color: $icon2;
+  position: relative;
+  right: 80px;
+  }
+  
+.circle-3 {
+  background-color: $icon3;
+  position: relative;
+  right: 30px;
+  }
+  
+.circle-4 {
+  background-color: $icon4;
+  position: relative;
+  right: 75px;
+  }
+  
+.circle-5 {
+  background-color: $icon5;
+  position: relative;
+  right: 40px;
+  }
+  
+.circle-6 {
+  background-color: $icon6;
+  position: relative;
+  right: 55px;
+}
+  
+.content-detail__header {
+  @include font-icon-event-title;
+  margin-top: 10px
+}
+  
+.content-detail__text {
+  @include font-icon-event-content;
+}

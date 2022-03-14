@@ -1,0 +1,39 @@
+
+// grid-breakpoints
+$grid-breakpoints: (
+    xs: 0,
+    mobile: 375px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    tablet: 1024px,
+    xl: 1200px,
+    xxl: 1400px,
+    desktop: 1440px
+) ;
+
+// container-max-widths
+$container-max-widths: (
+    mobile: 375px,
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    tablet: 1024px,
+    xl: 1140px,
+    xxl: 1320px,
+    desktop: 1440px
+) ;
+
+// Container padding
+$container-padding-x: 0;
+$container-padding-y: 0;
+
+// theme-color-variables
+$danger:        #F84646;
+
+// button customize
+$btn-line-height: 20px;
+$btn-font-weight: 700;
+
+// import bootstrap style 
+@import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
